@@ -1,0 +1,1 @@
+# Laberinto26-Pharo-clase
