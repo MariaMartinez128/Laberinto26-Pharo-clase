@@ -36,7 +36,11 @@ Este enfoque permite construir un modelo modular en el que es sencillo añadir n
 <img width="880" height="532" alt="image" src="https://github.com/user-attachments/assets/1566459e-0b60-4aa0-bbce-3424b25e28b2" />
 
 ## 🧭 Diagrama Decorator
+<img width="842" height="429" alt="Decorator" src="https://github.com/user-attachments/assets/c2c52c8e-50fe-4a74-ad04-2c952518792c" />
+
 ## 🧭 Diagrama Strategy
+<img width="840" height="564" alt="Strategy" src="https://github.com/user-attachments/assets/3d38482b-ddea-4911-8083-3eb195e76662" />
+
 ## 🧭 Diagrama Composite
 <img width="1379" height="674" alt="image" src="https://github.com/user-attachments/assets/a76a9412-c592-4f7f-af9d-365cc1085dd4" />
 
@@ -56,6 +60,8 @@ Este enfoque permite construir un modelo modular en el que es sencillo añadir n
 <img width="1154" height="735" alt="image" src="https://github.com/user-attachments/assets/3bd06d7f-7893-49e8-a0bb-e416cd0542c6" />
 
 ## 🧭 Diagrama Proxy
+<img width="1361" height="825" alt="Proxy" src="https://github.com/user-attachments/assets/0d3d73f0-9235-4d59-b0e5-89aa64b47583" />
+
 ## 🧭 Diagrama Adapter
 ## 🧭 Diagrama Bridge
 ## 🧭 Diagrama Mediator
