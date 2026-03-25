@@ -62,10 +62,5 @@ Este enfoque permite construir un modelo modular en el que es sencillo añadir n
 ## 🧭 Diagrama Proxy
 <img width="1361" height="825" alt="Proxy" src="https://github.com/user-attachments/assets/0d3d73f0-9235-4d59-b0e5-89aa64b47583" />
 
-## 🧭 Diagrama Adapter
-## 🧭 Diagrama Bridge
-## 🧭 Diagrama Mediator
-## 🧭 Diagrama State
-## 🧭 Diagrama Prototype
-## 🧭 Diagrama Observer
-## 🧭 Diagrama Command
+## 🧭 Diagrama Final
+
