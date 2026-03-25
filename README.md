@@ -63,4 +63,5 @@ Este enfoque permite construir un modelo modular en el que es sencillo añadir n
 <img width="1361" height="825" alt="Proxy" src="https://github.com/user-attachments/assets/0d3d73f0-9235-4d59-b0e5-89aa64b47583" />
 
 ## 🧭 Diagrama Final
+<img width="1088" height="796" alt="Captura de pantalla 2026-03-25 200743" src="https://github.com/user-attachments/assets/3cbb1b58-59c3-4996-9905-ac226aee10f4" />
 
