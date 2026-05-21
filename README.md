@@ -70,8 +70,8 @@ Gestiona el entorno del laberinto, incluyendo condiciones y efectos ambientales 
 ConsolaInteractiva.py
 Proporciona una interfaz por consola para interactuar con el sistema y probar funcionalidades
 
-## 🧭 Diagrama Factory Method
-<img width="876" height="510" alt="Diagrama de Clases" src="https://github.com/user-attachments/assets/a90ef99d-1ff1-4099-80eb-a4d8de8a2848" />
+## 🧭 Diagrama de Clases
+<img width="1316" height="718" alt="Diagrama de Clases (2)" src="https://github.com/user-attachments/assets/e75f558d-4323-44ae-a788-9f8421d8d190" />
 
 ## 🧭 Diagrama Factory Method
 <img width="880" height="532" alt="image" src="https://github.com/user-attachments/assets/1566459e-0b60-4aa0-bbce-3424b25e28b2" />
