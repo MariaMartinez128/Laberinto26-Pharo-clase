@@ -32,6 +32,47 @@ Además, el sistema incorpora elementos especiales que enriquecen la interacció
 
 Este enfoque permite construir un modelo modular en el que es sencillo añadir nuevas características sin modificar el núcleo del sistema.
 
+En la nueva versión del juego se han implementado modificaciones las cuales han añadido nuevas funcionalidades al sistema del laberinto para enriquecer el comportamiento y la interacción. A continuación se describen brevemente:
+
+ModoAsustado.py
+Define un estado en el que el bicho tiene miedo y no ataca, solo realiza acciones pasivas.
+
+ModoFrenetico.py
+Define un estado en el que el bicho está agresivo y ataca constantemente.
+
+BichoMutable.py
+Bicho especial que puede cambiar de comportamiento (modo) durante la ejecución del juego.
+
+Cofre.py
+Contenedor que almacena objetos como pociones que el jugador puede recoger.
+
+Altar.py
+Contenedor especial que permite interactuar con elementos más importantes o mágicos.
+
+PocionesConcretas.py
+Define distintos tipos de pociones (curación, fuerza, etc.) con efectos diferentes.
+
+EfectoPocion.py
+Gestiona la aplicación de los efectos de las pociones sobre el jugador.
+
+HojaEspejo.py
+Decorador que añade propiedades especiales a un espejo dentro del laberinto.
+
+HojaFoso.py
+Decorador que convierte un foso en un elemento con efectos adicionales (daño, obstáculo, etc.).
+
+HojaPocion.py
+Decorador que añade propiedades extra a las pociones (raras, especiales, etc.).
+
+GestorAmbiental.py
+Gestiona el entorno del laberinto, incluyendo condiciones y efectos ambientales dinámicos.
+
+ConsolaInteractiva.py
+Proporciona una interfaz por consola para interactuar con el sistema y probar funcionalidades
+
+## 🧭 Diagrama Factory Method
+<img width="876" height="510" alt="Diagrama de Clases" src="https://github.com/user-attachments/assets/a90ef99d-1ff1-4099-80eb-a4d8de8a2848" />
+
 ## 🧭 Diagrama Factory Method
 <img width="880" height="532" alt="image" src="https://github.com/user-attachments/assets/1566459e-0b60-4aa0-bbce-3424b25e28b2" />
 
