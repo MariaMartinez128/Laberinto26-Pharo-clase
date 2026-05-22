@@ -29,84 +29,145 @@ El juego se ejecuta por consola y cuenta con una interfaz visual mejorada.
 Para ejecutar el juego en la consola: python main.py
 Para ejecutar los test en la consola: python test_simple.py
 
+---
 
-🧠 Patrones de diseño utilizados
-A lo largo del desarrollo, se aplican diversos patrones de diseño con el objetivo de mejorar la organización, reutilización y mantenibilidad del código:
+## 🧠 Patrones de diseño utilizados
 
-Factory Method, Permite crear objetos sin saber exactamente qué tipo se va a crear hasta que el programa se ejecuta.
-Decorator, Añade funcionalidades a un objeto sin cambiar su clase.
-Strategy, Permite cambiar el comportamiento de un objeto en tiempo de ejecución.
-Composite, Permite tratar objetos individuales y grupos de objetos de la misma forma.
-Iterator, Permite recorrer elementos de una colección sin mostrar cómo están guardados.
-Template, Define los pasos de un algoritmo dejando que algunos se puedan modificar.
-Abstract Factory, Permite crear familias de objetos relacionados sin especificar sus clases concretas.
-Singleton, Garantiza que solo exista una única instancia de una clase.
-Builder, Permite construir objetos complejos paso a paso.
-Proxy, Controla el acceso a otro objeto.
-Adapter, Permite que clases con interfaces diferentes puedan trabajar juntas.
-Bridge, Separa una abstracción de su implementación para que puedan cambiar independientemente.
-Mediator, Centraliza la comunicación entre varios objetos para reducir dependencias.
-State, Permite que un objeto cambie su comportamiento según su estado.
-Prototype, Permite crear objetos copiando otros existentes.
-Observer, Notifica automáticamente a varios objetos cuando uno cambia.
-Command, Encapsula una acción como un objeto para poder ejecutarla o deshacerla.
+El proyecto utiliza múltiples patrones para mejorar la organización del código:
 
+- **Factory Method**  
+  Permite crear objetos sin saber su tipo hasta ejecutar el programa  
 
-⚙️ Modificaciones implementadas
-En esta versión del juego se han añadido nuevas funcionalidades que enriquecen el comportamiento y la interacción del sistema.
-Entre ellas se incluyen:
+- **Decorator**  
+  Añade funcionalidades sin modificar la clase original  
 
-Nuevos comportamientos de enemigos
-Nuevos tipos de objetos (cofres, altar, pociones)
-Decoradores sobre elementos del laberinto
-Sistema ambiental dinámico
-Interfaz de usuario mejorada
+- **Strategy**  
+  Permite cambiar el comportamiento en tiempo de ejecución  
 
-📄 Más información en: MODIFICACIONES.txt
+- **Composite**  
+  Trata igual objetos individuales y conjuntos  
 
-🎯 Funcionamiento del juego
-El juego se desarrolla por turnos:
+- **Iterator**  
+  Recorre colecciones sin mostrar su estructura interna  
 
-El jugador realiza una acción
-Los enemigos actúan según su comportamiento
-Se actualiza el estado del juego
+- **Template**  
+  Define pasos de un algoritmo modificables  
 
-📄 Ver detalles en: COMO_JUGAR.txt
+- **Abstract Factory**  
+  Crea familias de objetos relacionados  
 
-🗺️ Estructura del laberinto
-El laberinto está compuesto por 6 habitaciones conectadas entre sí, con distintos elementos distribuidos en cada una:
+- **Singleton**  
+  Garantiza una única instancia  
 
-Obstáculos (foso)
-Objetos (cofre, altar, pociones)
-Enemigos con comportamientos diferentes
+- **Builder**  
+  Construye objetos complejos paso a paso  
 
+- **Proxy**  
+  Controla el acceso a otro objeto  
 
-📊 Diagramas
-El proyecto incluye diagramas de los distintos patrones de diseño:
+- **Adapter**  
+  Hace compatibles interfaces distintas  
 
-Diagrama de clases
-Factory Method
-Decorator
-Strategy
-Composite
-Iterator
-Template
-Abstract Factory
-Singleton
-Builder
-Proxy
-Diagrama final
+- **Bridge**  
+  Separa abstracción e implementación  
+
+- **Mediator**  
+  Centraliza la comunicación entre objetos  
+
+- **State**  
+  Cambia el comportamiento según el estado  
+
+- **Prototype**  
+  Crea objetos copiando otros  
+
+- **Observer**  
+  Notifica cambios automáticamente  
+
+- **Command**  
+  Encapsula acciones como objetos  
+
+---
 
 
-📚 Documentación adicional
 
-📄 MODIFICACIONES.txt → Explicación de todas las modificaciones añadidas
-🎮 COMO_JUGAR.txt → Guía de uso del juego
+---
 
+## ⚙️ Modificaciones implementadas
 
-👩‍💻 Autor
-María Martínez González
-Grado en Ingeniería Informática
+Se han añadido mejoras importantes al sistema:
+
+- Nuevos comportamientos de enemigos  
+- Nuevos objetos (cofre, altar, pociones)  
+- Uso de decoradores en elementos del juego  
+- Sistema ambiental dinámico  
+- Interfaz de usuario mejorada  
+
+📄 Más información:  
+MODIFICACIONES.md
+
+---
+
+## 🎯 Funcionamiento del juego
+
+El juego sigue un sistema por turnos:
+
+1. El jugador realiza una acción  
+2. Los enemigos actúan  
+3. Se actualiza el estado  
+
+📄 Guía completa:  
+COMO_JUGAR.md
+
+---
+
+## 🗺️ Estructura del laberinto
+
+El laberinto contiene:
+
+- 6 habitaciones conectadas  
+- Obstáculos (fosos)  
+- Objetos (cofres, altar, pociones)  
+- Enemigos con comportamientos distintos  
+
+---
+
+## 📊 Diagramas
+
+El proyecto incluye diagramas de:
+
+- Clases  
+- Factory Method  
+- Decorator  
+- Strategy  
+- Composite  
+- Iterator  
+- Template  
+- Abstract Factory  
+- Singleton  
+- Builder  
+- Proxy  
+- Diagrama final  
+
+📄 Explicación:  
+EXPLICACION_DIAGRAMAS.md
+
+---
+
+## 📚 Documentación adicional
+
+- MODIFICACIONES.md  
+- COMO_JUGAR.md  
+- EXPLICACION_DIAGRAMAS.md  
+
+---
+
+## 👩‍💻 Autor
+
+**María Martínez González**  
+Grado en Ingeniería Informática  
+Asignatura: Diseño de Software  
+
+---
 
 ## 🧭 Diagrama de Clases
 <img width="1316" height="718" alt="Diagrama de Clases (2)" src="https://github.com/user-attachments/assets/e75f558d-4323-44ae-a788-9f8421d8d190" />
