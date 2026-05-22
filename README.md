@@ -1,4 +1,6 @@
-# Laberinto26-Pharo-clase
+
+
+# 🧩 Laberinto26 - Juego de Laberinto en Python
 
 ## 📌 Descripción
 
@@ -6,84 +8,105 @@ Este proyecto se desarrolla en el marco de la asignatura *Diseño de Software* y
 
 El laberinto está formado por un conjunto de habitaciones conectadas mediante puertas y delimitadas por paredes, creando una estructura navegable que puede evolucionar con nuevas funcionalidades.
 
-A lo largo del desarrollo, se aplican diversos patrones de diseño con el fin de mejorar la organización, reutilización y mantenibilidad del código. Estos son los siguientes:
+---
 
-- **Factory Method**, Permite crear objetos sin saber exactamente qué tipo se va a crear hasta que el programa se ejecuta.
-- **Decorator**, Añade funcionalidades a un objeto sin cambiar su clase.
-- **Strategy**, Permite cambiar el comportamiento de un objeto en tiempo de ejecución.
-- **Composite**, Permite tratar objetos individuales y grupos de objetos de la misma forma.
-- **Iterator**, Permite recorrer elementos de una colección sin mostrar cómo están guardados.
-- **Template**, Define los pasos de un algoritmo dejando que algunos se puedan modificar.
-- **Abstract Factory**, Permite crear familias de objetos relacionados sin especificar sus clases concretas.
-- **Singleton**, Garantiza que solo exista una única instancia de una clase.
-- **Builder**, Permite construir objetos complejos paso a paso.
-- **Proxy**, Controla el acceso a otro objeto.
-- **Adapter**, Permite que clases con interfaces diferentes puedan trabajar juntas.
-- **Bridge**, Separa una abstracción de su implementación para que puedan cambiar independientemente.
-- **Mediator**, Centraliza la comunicación entre varios objetos para reducir dependencias.
-- **State**, Permite que un objeto cambie su comportamiento según su estado.
-- **Prototype**, Permite crear objetos copiando otros existentes.
-- **Observer**, Notifica automáticamente a varios objetos cuando uno cambia.
-- **Command**, Encapsula una acción como un objeto para poder ejecutarla o deshacerla.
+## 🎮 ¿En qué consiste el juego?
 
-Además, el sistema incorpora elementos especiales que enriquecen la interacción dentro del laberinto, como:
-- Paredes con comportamientos especiales (por ejemplo, bomba broma).
-- Enemigos u obstáculos que afectan al avance del usuario.
+El jugador controla a un personaje que debe:
 
-Este enfoque permite construir un modelo modular en el que es sencillo añadir nuevas características sin modificar el núcleo del sistema.
+- Recorrer el laberinto
+- Interactuar con objetos (cofres, altares, pociones…)
+- Evitar o enfrentarse a enemigos
+- Tomar decisiones por turnos
+- Llegar a la última habitación
 
-En la nueva versión del juego se han implementado modificaciones las cuales han añadido nuevas funcionalidades al sistema del laberinto para enriquecer el comportamiento y la interacción. A continuación se describen brevemente:
+El juego se ejecuta por consola y cuenta con una interfaz visual mejorada.
 
-ModoAsustado.py
-Define un estado en el que el bicho tiene miedo y no ataca, solo realiza acciones pasivas.
+---
 
-<img width="292" height="371" alt="ModoAsustado" src="https://github.com/user-attachments/assets/a6cfd611-e644-4739-8c0d-ec82169eee52" />
+## ▶️ Ejecución
 
-ModoFrenetico.py
-Define un estado en el que el bicho está agresivo y ataca constantemente.
+Para ejecutar el juego en la consola: python main.py
+Para ejecutar los test en la consola: python test_simple.py
 
-<img width="278" height="384" alt="ModoFrenetico" src="https://github.com/user-attachments/assets/8ac9f06e-0e18-4b62-837e-a60dae3238d4" />
 
-BichoMutable.py
-Bicho especial que puede cambiar de comportamiento (modo) durante la ejecución del juego.
+🧠 Patrones de diseño utilizados
+A lo largo del desarrollo, se aplican diversos patrones de diseño con el objetivo de mejorar la organización, reutilización y mantenibilidad del código:
 
-<img width="289" height="264" alt="BichoMutable" src="https://github.com/user-attachments/assets/4802b2c6-d221-42cc-a9a1-99a19582ffc2" />
+Factory Method, Permite crear objetos sin saber exactamente qué tipo se va a crear hasta que el programa se ejecuta.
+Decorator, Añade funcionalidades a un objeto sin cambiar su clase.
+Strategy, Permite cambiar el comportamiento de un objeto en tiempo de ejecución.
+Composite, Permite tratar objetos individuales y grupos de objetos de la misma forma.
+Iterator, Permite recorrer elementos de una colección sin mostrar cómo están guardados.
+Template, Define los pasos de un algoritmo dejando que algunos se puedan modificar.
+Abstract Factory, Permite crear familias de objetos relacionados sin especificar sus clases concretas.
+Singleton, Garantiza que solo exista una única instancia de una clase.
+Builder, Permite construir objetos complejos paso a paso.
+Proxy, Controla el acceso a otro objeto.
+Adapter, Permite que clases con interfaces diferentes puedan trabajar juntas.
+Bridge, Separa una abstracción de su implementación para que puedan cambiar independientemente.
+Mediator, Centraliza la comunicación entre varios objetos para reducir dependencias.
+State, Permite que un objeto cambie su comportamiento según su estado.
+Prototype, Permite crear objetos copiando otros existentes.
+Observer, Notifica automáticamente a varios objetos cuando uno cambia.
+Command, Encapsula una acción como un objeto para poder ejecutarla o deshacerla.
 
-Cofre.py
-Contenedor que almacena objetos como pociones que el jugador puede recoger.
 
-<img width="248" height="221" alt="Cofre" src="https://github.com/user-attachments/assets/f0d7fafc-5de3-40de-83d5-fe1f7fa1cb00" />
+⚙️ Modificaciones implementadas
+En esta versión del juego se han añadido nuevas funcionalidades que enriquecen el comportamiento y la interacción del sistema.
+Entre ellas se incluyen:
 
-Altar.py
-Contenedor especial que permite interactuar con elementos más importantes o mágicos.
+Nuevos comportamientos de enemigos
+Nuevos tipos de objetos (cofres, altar, pociones)
+Decoradores sobre elementos del laberinto
+Sistema ambiental dinámico
+Interfaz de usuario mejorada
 
-<img width="278" height="223" alt="Altar" src="https://github.com/user-attachments/assets/a32f40bc-76ae-4c48-8a62-bb9f47d50c24" />
+📄 Más información en: MODIFICACIONES.txt
 
-PocionesConcretas.py
-Define distintos tipos de pociones (curación, fuerza, etc.) con efectos diferentes.
-EfectoPocion.py
-Gestiona la aplicación de los efectos de las pociones sobre el jugador.
+🎯 Funcionamiento del juego
+El juego se desarrolla por turnos:
 
-<img width="278" height="223" alt="Altar" src="https://github.com/user-attachments/assets/a32f40bc-76ae-4c48-8a62-bb9f47d50c24" />
+El jugador realiza una acción
+Los enemigos actúan según su comportamiento
+Se actualiza el estado del juego
 
-HojaEspejo.py
-Decorador que añade propiedades especiales a un espejo dentro del laberinto.
-HojaFoso.py
-Decorador que convierte un foso en un elemento con efectos adicionales (daño, obstáculo, etc.).
-HojaPocion.py
-Decorador que añade propiedades extra a las pociones (raras, especiales, etc.).
+📄 Ver detalles en: COMO_JUGAR.txt
 
-<img width="376" height="308" alt="Hojas" src="https://github.com/user-attachments/assets/2990ede7-3b95-482c-8d34-b200fbb365c9" />
+🗺️ Estructura del laberinto
+El laberinto está compuesto por 6 habitaciones conectadas entre sí, con distintos elementos distribuidos en cada una:
 
-GestorAmbiental.py
-Gestiona el entorno del laberinto, incluyendo condiciones y efectos ambientales dinámicos.
+Obstáculos (foso)
+Objetos (cofre, altar, pociones)
+Enemigos con comportamientos diferentes
 
-<img width="265" height="249" alt="GestorAmbiental" src="https://github.com/user-attachments/assets/31912665-3868-4beb-b56e-729d11c2cadb" />
 
-ConsolaInteractiva.py
-Proporciona una interfaz por consola para interactuar con el sistema y probar funcionalidades.
+📊 Diagramas
+El proyecto incluye diagramas de los distintos patrones de diseño:
 
-<img width="707" height="471" alt="Comandos" src="https://github.com/user-attachments/assets/814f3467-ab69-4708-8365-2b3fa6e7d856" />
+Diagrama de clases
+Factory Method
+Decorator
+Strategy
+Composite
+Iterator
+Template
+Abstract Factory
+Singleton
+Builder
+Proxy
+Diagrama final
+
+
+📚 Documentación adicional
+
+📄 MODIFICACIONES.txt → Explicación de todas las modificaciones añadidas
+🎮 COMO_JUGAR.txt → Guía de uso del juego
+
+
+👩‍💻 Autor
+María Martínez González
+Grado en Ingeniería Informática
 
 ## 🧭 Diagrama de Clases
 <img width="1316" height="718" alt="Diagrama de Clases (2)" src="https://github.com/user-attachments/assets/e75f558d-4323-44ae-a788-9f8421d8d190" />
