@@ -1,3 +1,5 @@
+from Solucion.Hoja import Hoja
+
 class Tunel(Hoja):
     def __init__(self):
         super().__init__()

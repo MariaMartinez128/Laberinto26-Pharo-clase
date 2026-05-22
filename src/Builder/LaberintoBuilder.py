@@ -1,3 +1,26 @@
+from Solucion.Laberinto import Laberinto
+from Solucion.Juego import Juego
+from Solucion.Habitacion import Habitacion
+from Solucion.Cuadrado import Cuadrado
+from Solucion.Norte import Norte
+from Solucion.Sur import Sur
+from Solucion.Este import Este
+from Solucion.Oeste import Oeste
+from Solucion.Noreste import Noreste
+from Solucion.Noroeste import Noroeste
+from Solucion.Sureste import Sureste
+from Solucion.Suroeste import Suroeste
+from Solucion.Pared import Pared
+from Solucion.Puerta import Puerta
+from Solucion.Abrir import Abrir
+from Solucion.Bicho import Bicho
+from Solucion.Armario import Armario
+from Solucion.Bomba import Bomba
+from Solucion.Tunel import Tunel
+from Solucion.Agresivo import Agresivo
+from Solucion.Perezoso import Perezoso
+
+
 class LaberintoBuilder:
     def __init__(self):
         self.laberinto = None
@@ -30,7 +53,6 @@ class LaberintoBuilder:
         for o in forma.orientaciones:
             hab.poner_en(o, self.fabricar_pared())
 
-        self.laberinto.agregar_habitacion(hab)
         return hab
 
     def fabricar_armario(self, num, cont):
@@ -90,6 +112,38 @@ class LaberintoBuilder:
         cont.agregar_hijo(tn)
         return tn
 
+    def fabricar_cofre_en(self, cont):
+        from Modificaciones.Cofre import Cofre
+        from Modificaciones.Pociones import PocionFuerza
+        cofre = Cofre()
+        cofre.agregar_hijo(PocionFuerza())
+        cont.agregar_hijo(cofre)
+        return cofre
+
+    def fabricar_altar_en(self, cont):
+        from Modificaciones.Altar import Altar
+        altar = Altar()
+        cont.agregar_hijo(altar)
+        return altar
+
+    def fabricar_pocion_fuerza_en(self, cont):
+        from Modificaciones.Pociones import PocionFuerza
+        pocion = PocionFuerza()
+        cont.agregar_hijo(pocion)
+        return pocion
+
+    def fabricar_pocion_curacion_en(self, cont):
+        from Modificaciones.Pociones import PocionCuracion
+        pocion = PocionCuracion()
+        cont.agregar_hijo(pocion)
+        return pocion
+
+    def fabricar_foso_en(self, cont):
+        from Modificaciones.HojaFoso import HojaFoso
+        foso = HojaFoso()
+        cont.agregar_hijo(foso)
+        return foso
+
     # -------- ORIENTACIONES --------
     def fabricar_norte(self): return Norte.default()
     def fabricar_sur(self): return Sur.default()
@@ -106,6 +160,14 @@ class LaberintoBuilder:
     # -------- MODOS --------
     def fabricar_agresivo(self): return Agresivo()
     def fabricar_perezoso(self): return Perezoso()
+    
+    def fabricar_asustado(self):
+        from Modificaciones.ModoAsustado import ModoAsustado
+        return ModoAsustado()
+    
+    def fabricar_frenetico(self):
+        from Modificaciones.ModoFrenetico import ModoFrenetico
+        return ModoFrenetico()
 
     # -------- FORMA --------
     def fabricar_forma(self):

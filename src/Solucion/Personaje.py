@@ -1,3 +1,5 @@
+from Solucion.Ente import Ente
+
 class Personaje(Ente):
     def __init__(self, nombre):
         super().__init__()

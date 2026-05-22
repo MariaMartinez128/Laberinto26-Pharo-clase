@@ -1,23 +1,35 @@
-class Bomba(Hoja):
+# -*- coding: utf-8 -*-
+from Solucion.Hoja import Hoja
+
+
+class Puerta(Hoja):
     def __init__(self):
         super().__init__()
-        self.activa = False
+        self.lado1 = None
+        self.lado2 = None
+        self.abierta = True  # Las puertas comienzan abiertas
 
     def aceptar(self, visitor):
-        visitor.visitar_bomba(self)
+        visitor.visitar_puerta(self)
 
-    def activar(self):
-        print("Bomba activada")
-        self.activa = True
+    def abrir(self):
+        print("Puerta abierta")
+        self.abierta = True
 
-    def desactivar(self):
-        print("Bomba desactivada")
-        self.activa = False
+    def cerrar(self):
+        print("Puerta cerrada")
+        self.abierta = False
 
     def entrar(self, alguien):
-        if self.activa:
-            print(f"{alguien} explot�")
+        if self.abierta:
+            print(f"{alguien} traspasa la puerta")
+            # Determinar a cuál lado ir
+            if alguien.posicion == self.lado1:
+                self.lado2.entrar(alguien)
+            elif alguien.posicion == self.lado2:
+                self.lado1.entrar(alguien)
+        else:
+            print("La puerta está cerrada")
 
-    def es_bomba(self):
+    def es_puerta(self):
         return True
-``

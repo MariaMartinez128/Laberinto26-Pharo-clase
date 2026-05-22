@@ -8,4 +8,4 @@ class Cerrada(EstadoPuerta):
 
     def esta_cerrada(self):
         return True
-``
+

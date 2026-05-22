@@ -1,4 +1,7 @@
+# -*- coding: utf-8 -*-
 import random
+from Solucion.ElementoMapa import ElementoMapa
+
 
 class Contenedor(ElementoMapa):
     def __init__(self):
@@ -21,7 +24,7 @@ class Contenedor(ElementoMapa):
         self.hijos.append(em)
 
     def entrar(self, alguien):
-        print(f"{alguien} est· en {self}")
+        print(f"{alguien} est√° en {self}")
         alguien.posicion = self
 
     def poner_en(self, orien, em):
@@ -29,4 +32,3 @@ class Contenedor(ElementoMapa):
 
     def obtener_orientacion_aleatoria(self):
         return random.choice(self.forma.orientaciones)
-``

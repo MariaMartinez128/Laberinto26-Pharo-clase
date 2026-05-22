@@ -1,10 +1,18 @@
+from Solucion.Contenedor import Contenedor
+
+
 class Cofre(Contenedor):
     def aceptar_contenedor(self, visitor):
-        # opcional
+        # Patrón Visitor - opcional
         pass
 
-    def abrir(self, personaje):
+    def usar(self, personaje):
         if self.hijos:
-            obj = self.hijos.pop()
-            print(f"Has encontrado {obj}")
+            obj = self.hijos.pop(0)
+            print(f"\n📦 Abres el Cofre y encuentras: {obj}")
             obj.usar(personaje)
+        else:
+            print("\n📦 El Cofre está vacío")
+
+    def __str__(self):
+        return "Cofre"

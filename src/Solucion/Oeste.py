@@ -1,3 +1,5 @@
+from Solucion.Orientacion import Orientacion
+
 class Oeste(Orientacion):
     _instancia = None
 

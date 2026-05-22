@@ -4,4 +4,4 @@ class Comando:
 
     def ejecutar(self, alguien):
         raise NotImplementedError
-``
+

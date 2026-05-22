@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+from Solucion.Forma import Forma
+
+
 class Cuadrado(Forma):
     def __init__(self):
         super().__init__()

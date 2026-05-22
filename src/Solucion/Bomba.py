@@ -1,3 +1,7 @@
+# -*- coding: utf-8 -*-
+from Solucion.Hoja import Hoja
+
+
 class Bomba(Hoja):
     def __init__(self):
         super().__init__()
@@ -16,8 +20,7 @@ class Bomba(Hoja):
 
     def entrar(self, alguien):
         if self.activa:
-            print(f"{alguien} explotó")
+            print(f"{alguien} explota")
 
     def es_bomba(self):
         return True
-``

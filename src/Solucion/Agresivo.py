@@ -1,3 +1,5 @@
+from Solucion.Modo import Modo
+
 import time
 
 class Agresivo(Modo):
@@ -10,5 +12,3 @@ class Agresivo(Modo):
 
     def __str__(self):
         return "Agresivo"
-``
-``

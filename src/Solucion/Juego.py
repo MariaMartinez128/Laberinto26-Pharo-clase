@@ -1,4 +1,5 @@
 import copy
+from Solucion.Personaje import Personaje
 
 class Juego:
     def __init__(self):

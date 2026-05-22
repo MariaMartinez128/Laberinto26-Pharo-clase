@@ -1,3 +1,5 @@
+from Solucion.Ente import Ente
+
 class Bicho(Ente):
     def __init__(self, modo):
         super().__init__()

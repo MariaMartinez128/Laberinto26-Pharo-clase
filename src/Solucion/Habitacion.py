@@ -1,3 +1,6 @@
+from Solucion.Contenedor import Contenedor
+
+
 class Habitacion(Contenedor):
     def aceptar_contenedor(self, visitor):
         visitor.visitar_habitacion(self)

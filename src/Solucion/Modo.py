@@ -16,4 +16,4 @@ class Modo:
 
     def es_agresivo(self): return False
     def es_perezoso(self): return False
-``
+

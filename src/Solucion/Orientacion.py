@@ -13,4 +13,3 @@ class Orientacion:
 
     def recorrer(self, func, cont):
         raise NotImplementedError
-``
