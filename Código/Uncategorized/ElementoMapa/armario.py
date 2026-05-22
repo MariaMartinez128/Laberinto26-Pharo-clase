@@ -1,2 +1,0 @@
-class Armario(Contenedor):
-    pass
