@@ -1,19 +1,29 @@
 import unittest
+import sys
+import os
+
+# Agregar el directorio src al path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+from Builder.Director import Director
+from Solucion.Juego import Juego
+from Visitor.VistorAbrirPuertas import VistorAbrirPuertas
+from Visitor.VisitorCerrarPuertas import VisitorCerrarPuertas
 
 
 class LaberintoBuilderTest(unittest.TestCase):
 
     def setUp(self):
         self.director = Director()
-
-        ruta = r"C:\Users\Jose.Gallud\CloudStation\asignaturas\diseño de sofware\curso25-26\laberintos\\"
-        archivo = ruta + "lab4Hab4bm2bichosTunel.json"
-
+        
+        # Usar el archivo laberinto.json en la raiz del proyecto
+        archivo = os.path.join(os.path.dirname(__file__), '..', '..', 'laberinto.json')
+        
         self.director.procesar(archivo)
 
         self.dict = self.director.dict
         self.juego = self.director.obtener_juego()
-        self.juego.agregar_personaje("Pepe")
+        self.juego.agregar_personaje("Maria")
 
     # -------------------------
     # UTILIDADES
@@ -34,7 +44,7 @@ class LaberintoBuilderTest(unittest.TestCase):
         self.comprobar_funcionamiento_bomba(bmb)
 
     def comprobar_funcionamiento_bomba(self, bomba):
-        # hasta en Smalltalk estaba vacío
+        # hasta en Smalltalk estaba vacï¿½o
         pass
 
     def comprobar_tunel_en(self, cont):
@@ -151,7 +161,7 @@ class LaberintoBuilderTest(unittest.TestCase):
 
         self.assertFalse(any(p.estado.esta_abierta() for p in puertas))
 
-        vab = VisitorAbrirPuertas()
+        vab = VistorAbrirPuertas()
         self.juego.laberinto.aceptar(vab)
 
         self.assertFalse(any(p.estado.esta_cerrada() for p in puertas))
@@ -168,5 +178,5 @@ class LaberintoBuilderTest(unittest.TestCase):
         self.assertTrue(all(not b.esta_vivo() for b in self.juego.bichos))
 
     def test_ganan_bichos(self):
-        # no implementado también en Smalltalk
+        # no implementado tambiï¿½n en Smalltalk
         pass
