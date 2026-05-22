@@ -10,8 +10,8 @@ class LaberintoGUI:
     def iniciar_juego(self):
         director = Director()
 
-        ruta = r"C:\Users\Jose.Gallud\CloudStation\asignaturas\diseño de sofware\curso25-26\laberintos\\"
-        archivo = ruta + "lab4hab4bm2bichosTunel.json"
+        ruta = r"C:\Users\usuario\source\repos\MariaMartinez128\Laberinto26-Pharo-clase\\"
+        archivo = ruta + "laberinto.json"
 
         director.procesar(archivo)
 
@@ -19,30 +19,21 @@ class LaberintoGUI:
 
         self.mostrar_laberinto()
 
-        # Placeholder de ventana (luego puedes usar tkinter, pygame, etc.)
         self.win = "Ventana: LaberintoGUI"
         print(self.win)
 
-        # Opcional
-        # self.agregar_personaje("Pepín")
-        # self.dibujar_laberinto()
-
+      
     # ---------------------------
     # DIBUJO
     # ---------------------------
     def calcular_posicion(self):
-        # A implementar: calcular posiciones relativas de habitaciones
         pass
 
     def mostrar_laberinto(self):
-        # pasos de renderizado lógico
+        # pasos de renderizado lï¿½gico
         self.calcular_posicion()
 
-        # Comentados igual que en Smalltalk
-        # self.normalizar()
-        # self.calcular_dimensiones()
-        # self.asignar_puntos_reales()
-
+       
     # ---------------------------
     # GETTERS / SETTERS
     # ---------------------------
