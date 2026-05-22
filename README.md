@@ -27,6 +27,7 @@ El juego se ejecuta por consola y cuenta con una interfaz visual mejorada.
 ## ▶️ Ejecución
 
 Para ejecutar el juego en la consola: python main.py
+
 Para ejecutar los test en la consola: python test_simple.py
 
 ---
@@ -104,6 +105,7 @@ Se han añadido mejoras importantes al sistema:
 
 📄 Más información:  
 MODIFICACIONES.md
+[Ver modificaciones](MODIFICACIONES.md)
 
 ---
 
@@ -117,6 +119,7 @@ El juego sigue un sistema por turnos:
 
 📄 Guía completa:  
 COMO_JUGAR.md
+[Cómo jugar](COMO_JUGAR.md)
 
 ---
 
@@ -149,15 +152,27 @@ El proyecto incluye diagramas de:
 - Diagrama final  
 
 📄 Explicación:  
-EXPLICACION_DIAGRAMAS.md
+EXPLICACION.md
+[Explicación de diagramas](Diagramas/Diagramas_Patrones/EXPLICACION.md)
+
+Las modiificaciones añadidas se encuentran en:
+
+EXPLICACION.md [Ver explicación](Diagramas/Diagramas_Modificaciones/EXPLICACION.md)
 
 ---
 
 ## 📚 Documentación adicional
 
-- MODIFICACIONES.md  
-- COMO_JUGAR.md  
-- EXPLICACION_DIAGRAMAS.md  
+- MODIFICACIONES.md
+[Ver modificaciones](MODIFICACIONES.md)
+
+- COMO_JUGAR.md
+[Cómo jugar](COMO_JUGAR.md)
+
+- EXPLICACION.md  
+[Explicación de patrones](Diagramas/Diagramas_Patrones/EXPLICACION.md)
+
+[Explicación de modificaciones](Diagramas/Diagramas_Modificaciones/EXPLICACION.md)
 
 ---
 
